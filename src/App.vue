@@ -1,5 +1,4 @@
 <template>
-  <title>Manu's List</title>
   <h1>Lista de la compra</h1>
   <form @submit.prevent="addNewTodo">
     <label for="newTodo"></label>
