@@ -3,7 +3,7 @@
   <form @submit.prevent="addNewTodo">
     <label for="newTodo"></label>
     <input v-model="newTodo" type="text" name="newTodo" />
-    <button>Agregar articulo a la lista</button>
+    <button>Agregar articulo</button>
   </form>
   <button @click="markAllDone">Marcar todos</button>
   <button @click="removeAll">Borrar todos</button>
