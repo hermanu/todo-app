@@ -1,18 +1,18 @@
 <template>
-  <h1>Vue 3 Todo App</h1>
+  <h1>Lista de la compra</h1>
   <form @submit.prevent="addNewTodo">
     <label for="newTodo"></label>
     <input v-model="newTodo" type="text" name="newTodo" />
-    <button>Add New Todo</button>
+    <button>Agregar articulo a la lista</button>
   </form>
-  <button @click="markAllDone">Mark All Done</button>
-  <button @click="removeAll">Remove all</button>
+  <button @click="markAllDone">Marcar todos</button>
+  <button @click="removeAll">Borrar todos</button>
   <ul>
     <li v-for="(todo, index) in todoList" :key="todo.id" class="todo">
       <h3 :class="{ done: todo.done }" @click="toggleDone(todo)">
         {{ todo.content }}
       </h3>
-      <button @click="removeTodo(index)">Remove</button>
+      <button @click="removeTodo(index)">Borrar</button>
     </li>
   </ul>
 </template>
