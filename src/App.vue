@@ -13,10 +13,4 @@
   color: #2c3e50;
   margin-top: 60px;
 }
-.done {
-  text-decoration: line-through;
-}
-.todo {
-  cursor: pointer;
-}
 </style>
